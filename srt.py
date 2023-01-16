@@ -18,7 +18,7 @@ for i in Lines:
             if ('-->' in i):
                 file2.write(i)
             else:
-                translated = translator.translate(i, src='en', dest='ml') #source language = en (English) and destination/output language = ml (malayalam) or take your own.
+                translated = translator.translate(i, src='en', dest='ml') #source language = en (English) and destination/output language = ml (malayalam) or take your own lang.
                 file2.write(f"{translated.text} \n")
     except:
         file2.write(i)
